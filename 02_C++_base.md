@@ -1,5 +1,7 @@
 # C++ base
 
+### [Progetto di esempio: C++_base](./C%2B%2B_base/C%2B%2B_base.ino)
+
 ## Le variabili
 
 Le variabili servono per tenere salvati dei dati o dei passi parziali durante l'esecuzione del programma. Ad esempio, per la risoluzione di un'equazione di secondo grado, prima calcoliamo il delta, poi lo scriviamo a parte e infine lo utilizziamo nella formula.  

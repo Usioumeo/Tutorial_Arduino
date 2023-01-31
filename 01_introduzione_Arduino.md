@@ -28,7 +28,7 @@ Inoltre è possibile utilizzare anche i pin di entrata analogica (ad esempio A0)
 Una volta identificati i pin è necessario configurarli correttamente con: `pinMode(pin, modalità);`.
 
 Il parametro "modalità" accetta i seguenti parametri:
-- `OUTPUT`: Semplice modalità di output(3.3V, massimo	15 mA)
+- `OUTPUT`: Semplice modalità di output(3.3V, massimo 15 mA)
 - `INPUT`: Semplice modalità di input (di solito i pin in modalità lettura hanno una resistenza nell'ordine dei 100MOhm) 
 
 - `INPUT_PULLUP`: 10kOhm. Se è scollegato segna HIGH
@@ -62,7 +62,7 @@ void loop(){
 ```
 
 # Delay
-Spesso un programma deve interfacciarsi con persone e/o sensori che non riescono a funzionare a velocità paragonabili al clock del controllore. Ed ecco che arrivano in nostro soccorso le funzioni `Delay` e `DelayMicrosecond` della libreria standard di Arduino. Entrambe prendono come parametro la quantità di tempo da attendere, la prima in ms, e la seconda in microsecondi.
+Spesso un programma deve interfacciarsi con persone e/o sensori che non riescono a funzionare a velocità paragonabili al clock del controllore. Ed ecco che arrivano in nostro soccorso le funzioni `delay` e `delayMicrosecond` della libreria standard di Arduino. Entrambe prendono come parametro la quantità di tempo da attendere, la prima in ms, e la seconda in microsecondi.
 ```cpp
 void setup(){
 	pinMode(D13, OUTPUT);

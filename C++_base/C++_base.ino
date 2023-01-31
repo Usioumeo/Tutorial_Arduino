@@ -93,7 +93,8 @@ void setup() {
   }
 }
 
-void loop() {Serial.println("Se a = 5 m/(s^2) e m = 6 kg, quanto vale Ftot?");
+void loop() {
+  Serial.println("Se a = 5 m/(s^2) e m = 6 kg, quanto vale Ftot?");
   bool corretto = false;
   for (int tentativi = 0; tentativi < 5; tentativi++) {
     int valore = Serial.parseInt();

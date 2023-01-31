@@ -149,12 +149,14 @@ Per scrivere le condizioni esistono le seguenti operazioni:
 - `x <= y`, `x < y`, `x >= y`, `x > y` fanno ciò che ci si aspetterebbe
 - `x == y` restituisce vero se `x` è uguale a `y`
 - `x != y` restituisce vero se `x` è diverso da `y`
-- `!a` restituisce l'opposto di `a`, quindi se `a` è vero `!a` è falso
-- `a && b` restituisce vero solo quando sia `a` che `b` sono vere, altrimenti restituisce falso
-- `a || b` restituisce vero quando almeno una tra `a` e `b` è vera, mentre se sia `a` che `b` sono false restituisce falso
+- `!a` (NOT) restituisce l'opposto di `a`, quindi se `a` è vero `!a` è falso
+- `a && b` (AND) restituisce vero solo quando sia `a` che `b` sono vere, altrimenti restituisce falso
+- `a || b` (OR) restituisce vero quando almeno una tra `a` e `b` è vera, mentre se sia `a` che `b` sono false restituisce falso
 - le parentesi `()` funzionano come con le altre operazioni
 
 Esiste inoltre un tipo `bool` per le variabili, che può assumere solo i valori `true` e `false` e serve per tenere salvato il valore di una condizione, ovvero un valore di verità. I valori `bool` possono essere usati direttamente all'interno degli `if` al posto della condizione.
+
+Da ricordare che secondo le *leggi di De Morgan* `!(a && b)` è la stessa cosa di `(!a) || (!b)`, e `!(a || b)` è la stessa cosa di `(!a) && (!b)`.
 
 ```cpp
 float h = 5.3, k = 7.1;

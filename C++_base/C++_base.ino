@@ -93,6 +93,29 @@ void setup() {
   }
 }
 
-void loop() {
+void loop() {Serial.println("Se a = 5 m/(s^2) e m = 6 kg, quanto vale Ftot?");
+  bool corretto = false;
+  for (int tentativi = 0; tentativi < 5; tentativi++) {
+    int valore = Serial.parseInt();
 
+    while (Serial.available()) {
+      // se assieme al valore l'utente ha scritto anche dell'altro, facciamo in modo che sia tolto tutto
+      Serial.read();
+    }
+
+    if (valore == 5 * 6) {
+      corretto = true;
+      break; // esce dal ciclo
+    } else {
+      if (valore <= 0) {
+        Serial.print("Non ha senso che una forza sia negativa! ");
+      }
+      Serial.println("Riprova");
+    }
+  }
+  if (corretto) {
+    Serial.println("Corretto!");
+  } else {
+    Serial.println("Il risultato era 30");
+  }
 }

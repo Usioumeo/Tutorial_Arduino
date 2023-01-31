@@ -2,7 +2,7 @@
 
 ### [Progetto di esempio: C++_base](./C%2B%2B_base/C%2B%2B_base.ino)
 
-## Le variabili
+## Variabili
 
 Le variabili servono per tenere salvati dei dati o dei passi parziali durante l'esecuzione del programma. Ad esempio, per la risoluzione di un'equazione di secondo grado, prima calcoliamo il delta, poi lo scriviamo a parte e infine lo utilizziamo nella formula.  
 
@@ -171,5 +171,85 @@ if (h < k) { // condizione tra le parentesi tonde
 	Serial.println("h e' uguale a k");
 } else {
 	Serial.println("h e' maggiore di k");
+}
+```
+
+
+## Cicli
+
+Talvolta può essere utile eseguire del codice più volte. Per fare ciò esistono i cicli.
+
+### for
+
+Il ciclo `for` comprende tre elementi:
+- inizializzazione: viene eseguita prima di eseguire il ciclo, e serve per dichiarare e inizializzare la variabile da usare per gestire il ciclo
+- condizione: viene controllata prima di ogni iterazione; se è vera allora il ciclo continua, altrimenti si interrompe
+- incremento: viene eseguito al termine di ogni iterazione, e serve solitamente per incrementare la variabile usata per gestire il ciclo
+
+```cpp
+for (inizializzazione; condizione; incremento) {
+	// ...
+}
+```
+
+Ad esempio, il seguente ciclo scrive i numeri da 0 a 7:
+
+```cpp
+for (int i = 0; i < 8; i++) {
+	Serial.println(i);
+}
+```
+
+### while
+
+Talvolta non si ha bisogno di una variabile per gestire il ciclo, come nel caso del `for`, ma si vuole semplicemente continuare ad eseguire del codice fintantochè una condizione rimane vera. Per questo esiste il ciclo `while`:
+
+```cpp
+while (condizione) {
+	// ...
+}
+```
+
+Ad esempio, il seguente ciclo aspetta finchè non ci sono dei caratteri pronti alla lettura sulla seriale, controllando circa una volta al secondo:
+
+```cpp
+while (Serial.available() <= 0) {
+	delay(1000); // aspetta un secondo prima di ricontrollare
+}
+```
+
+### break e continue
+
+Talvolta si ha la necessità di saltare un'iterazione oppure uscire da un ciclo in anticipo. Pertanto esistono i seguenti costrutti:
+- `break` esce dal ciclo
+- `continue` termina l'iterazione corrente
+
+## Esempio complessivo
+
+```cpp
+Serial.println("Se a = 5 m/(s^2) e m = 6 kg, quanto vale Ftot?");
+bool corretto = false;
+for (int tentativi = 0; tentativi < 5; tentativi++) {
+	int valore = Serial.parseInt();
+
+	while (Serial.available()) {
+		// se assieme al valore l'utente ha scritto anche dell'altro, facciamo in modo che sia tolto tutto
+		Serial.read();
+	}
+
+	if (valore == 5 * 6) {
+		corretto = true;
+		break; // esce dal ciclo
+	} else {
+		if (valore <= 0) {
+			Serial.print("Non ha senso che una forza sia negativa! ");
+		}
+		Serial.println("Riprova");
+	}
+}
+if (corretto) {
+	Serial.println("Corretto!");
+} else {
+	Serial.println("Il risultato era 30");
 }
 ```

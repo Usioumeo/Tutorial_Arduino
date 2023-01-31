@@ -2,6 +2,12 @@
 
 ### [Progetto di esempio: C++_base](./C%2B%2B_base/C%2B%2B_base.ino)
 
+## Commenti
+
+I commenti servono per aggiungere delle note al codice: non verranno mai eseguiti. Ci sono due formati:
+- `// commento` crea un commento a partire da `//` e fino alla fine della linea
+- `/* commento */` crea un commento a partire da `/*` e fino a `*/`
+
 ## Variabili
 
 Le variabili servono per tenere salvati dei dati o dei passi parziali durante l'esecuzione del programma. Ad esempio, per la risoluzione di un'equazione di secondo grado, prima calcoliamo il delta, poi lo scriviamo a parte e infine lo utilizziamo nella formula.  

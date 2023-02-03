@@ -118,9 +118,9 @@ void setup(){
 }
 
 void loop() {
-  if (Serial.available()>0){ // se ho dei caratteri nel buffer della seriale
+  if (Serial.available() > 0) { // se ho dei caratteri nel buffer della seriale
   	//leggo il valore, e lo salvo nella variabile tmp(spiegata nella prossima lezione)
-  	char tmp= Serial.read();
+  	char tmp = Serial.read();
 
 	//scrivo il carattere tmp in seriale
 	Serial.write(tmp);

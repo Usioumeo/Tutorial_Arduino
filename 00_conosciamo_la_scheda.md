@@ -1,10 +1,12 @@
-# La dotazione della scuola
+# Conosciamo la scheda
+
+## La dotazione della scuola
 In laboratorio di informatica sono presenti delle schede `Arduino UNO` (grandi classici), ma in dotazione all'laboratorio di fisica ci sono le schede `Arduino Nano 33 BLE Sense`.
 Pertanto ci sembra utile elencare un po' di risorse relative a queste ultime in modo da averle a portata di mano se fosse necessaria una rapida consultazione.
 - [Arduino Store](https://store.arduino.cc/products/arduino-nano-33-ble-sense)
 - [Descrizione hardware (con relativi datasheet)](https://docs.arduino.cc/hardware/nano-33-ble-sense)
 
-# I sensori
+## I sensori
 - Accelerometro, Giroscopio, Bussola: LSM9DS1
 - Microfono: MP34DT05
 - Luce: APDS9960

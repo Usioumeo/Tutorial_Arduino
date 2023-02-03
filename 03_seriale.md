@@ -1,5 +1,34 @@
 # Seriale
 
+L'introduzione alla comunicazione seriale è su [01_introduzione_Arduino](./01_introduzione_Arduino.md#seriale).
+
+## Altri comandi utili
+
+### Funzione Serial.available
+Se ci sono dei dati nel buffer della seriale, `Serial.available()` ritorna il numero di byte in coda nel buffer.
+
+### Funzione Serial.read
+`Serial.read()` ritorna il primo byte dal buffer, rimuovendolo dalla coda. Se non ci sono altri elementi nel buffer ritorna -1;
+
+### Un esempio riassuntivo
+Ecco un esempio che risponde su seriale qualsiasi cosa riceva.
+```cpp
+void setup(){
+	//apre la seriale con baudrate di 9600
+	Serial.begin(9600);
+}
+
+void loop() {
+  if (Serial.available() > 0) { // se ho dei caratteri nel buffer della seriale
+  	//leggo il valore, e lo salvo nella variabile tmp
+  	char tmp = Serial.read();
+
+	//scrivo il carattere tmp in seriale
+	Serial.write(tmp);
+  }
+}
+```
+
 ## Plotter seriale per fare grafici
 
 La seriale si può usare anche per tracciare dei grafici dell'evoluzione di una variabile nel tempo. Questo può essere utile per monitorare l'andamento di un sensore oppure visualizzare delle statistiche.

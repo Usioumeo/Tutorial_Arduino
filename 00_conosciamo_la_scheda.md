@@ -16,3 +16,7 @@ Pertanto ci sembra utile elencare un po' di risorse relative a queste ultime in 
 
 - 13 pin digitali + 1 led sulla board (in teoria tutti gestibili con il PWM, ma è meglio controllare, data l'imprecisione nella documentazione)
 - 8 entrate analogiche (12 bit, 200 kHz)
+
+## Collegamento al computer
+
+Per collegarsi al computer è sufficiente collegare l'usb. All'interno di Arduino IDE bisogna poi impostare la scheda e la porta a cui è connessa dal menù "Strumenti". Per verificare se il programma è scritto correttamente si può usare il pulsante "Verifica", mentre per caricare un programma sulla scheda si preme sul pulsante "Carica".

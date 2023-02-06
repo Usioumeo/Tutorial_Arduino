@@ -38,9 +38,9 @@ Questa scheda, a differenza dell'Arduino UNO, ha a bordo vari sensori:
 
 - Accelerometro, Giroscopio, Bussola: LSM9DS1
 - Microfono: MP34DT05
-- Luce: APDS9960
+- Luce, Colore: APDS9960
 - Pressione: LPS22HB
-- Umidità: HTS221
+- Umidità, Temperatura: HTS221
 
 ### Installazione della scheda su Arduino IDE
 

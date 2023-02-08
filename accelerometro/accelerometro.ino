@@ -2,9 +2,8 @@
 #include "Arduino_LSM9DS1.h"
 
 void setup() {
-  // inizializza il seriale e attende che un computer vi si connetta
+  // inizializza il seriale
   Serial.begin(9600);
-  while (!Serial);
 
   // inizializza il LSM9DS1
   IMU.begin();

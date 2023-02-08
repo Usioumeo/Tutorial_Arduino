@@ -31,10 +31,15 @@ class GY_31{
     pinMode(s2, OUTPUT);
     pinMode(s3, OUTPUT);
     pinMode(out, INPUT);
-    set_mode(CLEAR);
+  }
+
+  void set_led(int m){
+    if(hasLed&&(m==HIGH||m==LOW)){
+      digitalWrite(led, m);
+    }
   }
   
-  void set_mode(GY_31_mode m){
+  int read(GY_31_mode m){
     switch(m){
       case RED:
         digitalWrite(s2, LOW);
@@ -54,15 +59,6 @@ class GY_31{
       break;
     }
     delay(1);
-  }
-
-  void set_led(int m){
-    if(hasLed&&(m==HIGH||m==LOW)){
-      digitalWrite(led, m);
-    }
-  }
-  
-  int read(){
     pulseIn(out, HIGH);
     return pulseIn(out, HIGH);
   }

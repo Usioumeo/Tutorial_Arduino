@@ -1,5 +1,5 @@
 // include la libreria che mette a disposizione l'oggetto IMU
-#include <Arduino_LSM9DS1.h>
+#include "Arduino_LSM9DS1.h"
 
 void setup() {
   // inizializza il seriale e attende che un computer vi si connetta

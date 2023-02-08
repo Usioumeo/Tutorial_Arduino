@@ -5,11 +5,8 @@ void setup() {
     setup(s0, s1, s2, s3, out) 
     setup(s0, s1, s2, s3, out, led) //inizializza anche il pin Led
 
-    dopo averlo inizializzato si può impostare una modalità di lettura con
-    set_mode(mod) dove mod può essere RED GREEN BLUE CLEAR
-
     e leggere i valori con:
-    read()
+    read(mod)dove mod può essere RED GREEN BLUE CLEAR
     attenzione, il sensore non è calibrato, nel 90% dei casi bisogna calibrare il sensore e rimapparlo con dei valori sensati. sotto vedete dei parametri che dovrebbero andare bene, ma potrebbero non essere perfetti
 
     set_led(mod) come da nome, si decide se accendere o meno i led
@@ -23,13 +20,11 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  sensore.set_mode(RED);
   Serial.print("Rosso: ");
-  Serial.println(sensore.read()); // dato grezzo
+  Serial.println(sensore.read(RED)); // dato grezzo
 
-  sensore.set_mode(RED);
   Serial.print("Rosso calibrato: ");
-  Serial.println(map(sensore.read(), 60, 15, 0, 100)); // dato calibrato
+  Serial.println(map(sensore.read(RED), 60, 15, 0, 100)); // dato calibrato
   /*
   stando al datasheet, le calibrazioni corrette sono:
     rosso: map(data,60,15,0,100)

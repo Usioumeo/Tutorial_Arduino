@@ -2,6 +2,19 @@
 
 L'introduzione alla comunicazione seriale è su [01_introduzione_Arduino](./01_introduzione_Arduino.md#seriale).
 
+## Attendere una connessione al computer
+
+Arduino Uno si resetta in automatico nel momento in cui si apre la seriale dall'Ide, quindi è possibile leggere anche eventuali messaggi scritti poco dopo l'avvio della scheda. Invece il Nano 33 BLE Sense non fa così. Può fare utile quindi, all'interno del `setup()`, attendere che ci sia una connessione ad un computer prima di fare qualsiasi cosa:
+```cpp
+void setup(){
+	//apre la seriale con baudrate di 9600
+	Serial.begin(9600);
+
+  // attende finche' un computer connesso non apre il monitor seriale
+  while (!Serial);
+}
+```
+
 ## Altri comandi utili
 
 ### Funzione Serial.available

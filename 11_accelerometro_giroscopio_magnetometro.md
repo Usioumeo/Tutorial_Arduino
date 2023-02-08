@@ -1,0 +1,45 @@
+# LSM9DS1
+
+- Il modulo inerziale LSM9DS1 è integrato nell'Arduino Nano 33 BLE Sense e pertanto si può usare solo con tale scheda. Un datasheet è disponibile [qui](https://cdn.sparkfun.com/assets/learn_tutorials/3/7/3/LSM9DS1_Datasheet.pdf).
+- Per l'uso dei sensori su questa scheda è necessario installare la libreria omonima. Basta andare in `Strumenti -> Gestione librerie`, cercare "LSM9DS1" ed installare "Arduino_LSM9DS1".
+- Per interagire con la libreria all'interno del codice bisogna includerla con `#include <Arduino_LSM9DS1.h>`. La documentazione della libreria è disponibile [qui](https://www.arduino.cc/reference/en/libraries/arduino_lsm9ds1/).
+- All'interno del `setup()`, per inizializzare la connessione con il modulo, si usa `IMU.begin()`.
+
+
+## Accelerometro
+
+### [Progetto di esempio: accelerometro](./accelerometro/accelerometro.ino)
+
+- Fornisce misurazioni ad una frequenza di 104Hz.
+- Riesce a leggere accelerazioni da $-4g$ a $+4g$, con una precisione di $1.22*10^{-4}g$.
+- Fornisce i dati nell'unità di misura $g$, cioè rispetto all'accelerazione di gravità.
+
+Più informazioni sull'accelerometro sono disponibili [nel tutorial ufficiale di Arduino](https://docs.arduino.cc/tutorials/nano-33-ble-sense/imu-accelerometer).
+
+![Orientazione](./assets/nano33BS_02_acceleration.png)
+
+
+## Giroscopio
+
+### [Progetto di esempio: giroscopio](./giroscopio/giroscopio.ino)
+
+- Fornisce misurazioni ad una frequenza di 104Hz.
+- Riesce a leggere velocità angolari da $-2000°/s$ a $+2000°/s$, con una precisione di $7*10^{-2}°/s$.
+- Fornisce i dati nell'unità di misura $dps$, ovvero $°/s$, ovvero gradi al secondo.
+
+Più informazioni sul giroscopio sono disponibili [nel tutorial ufficiale di Arduino](https://docs.arduino.cc/tutorials/nano-33-ble-sense/imu-gyroscope).
+
+![Orientazione](./assets/nano33BS_03_gyroscope.png)
+
+
+## Magnetometro
+
+### [Progetto di esempio: magnetometro](./magnetometro/magnetometro.ino)
+
+- Fornisce misurazioni ad una frequenza di 20Hz.
+- Riesce a leggere valori di campo magnetico da $-400\mu T$ a $+400\mu T$, con una precisione di $1.4*10^{-2}\mu T$.
+- Fornisce i dati nell'unità di misura $\mu T$, ovvero microTesla.
+
+Più informazioni sul magnetometro sono disponibili [nel tutorial ufficiale di Arduino](https://docs.arduino.cc/tutorials/nano-33-ble-sense/imu-magnetometer).
+
+![Orientazione](./assets/nano33BS_04_magnetometer.png)

@@ -4,7 +4,8 @@
 
 - Il sensore ad ultrasuoni in dotazione della scuola è il HC-SR04.
 - Opera a 5v, pertanto si può connettere solo ad un Arduino Uno (il Nano 33 BLE opera a 3.3v, quindi richiederebbe un convertitore 3.3v-5v).
-- Invia segnali acustici a 40kHz
+- Invia segnali acustici a 40kHz.
+- Il datasheet è accessibile [qui](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf).
 
 ## PIN
 

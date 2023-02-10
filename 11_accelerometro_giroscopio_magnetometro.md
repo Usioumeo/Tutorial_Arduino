@@ -46,3 +46,10 @@ Più informazioni sul giroscopio sono disponibili [nel tutorial ufficiale di Ard
 Più informazioni sul magnetometro sono disponibili [nel tutorial ufficiale di Arduino](https://docs.arduino.cc/tutorials/nano-33-ble-sense/imu-magnetometer).
 
 ![Orientazione](./assets/nano33BS_04_magnetometer.png)
+
+
+## Magnetometro con calibrazione iniziale
+
+### [Progetto di esempio: magnetometro_calibrazione](./magnetometro_calibrazione/magnetometro_calibrazione.ino)
+
+Nel caso in cui si voglia fare una calibrazione iniziale del magnetometro, così da rimuovere il campo magnetico terrestre ed altre interferenze dalle misurazioni, si può fare riferimento al progetto qui sopra. È quindi una buona idea tenere il sensore fermo durante l'esecuzione del programma, così che i dati di calibrazione restino validi.

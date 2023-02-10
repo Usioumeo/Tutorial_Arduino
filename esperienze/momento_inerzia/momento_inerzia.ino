@@ -90,6 +90,7 @@ void setup() {
 
 
 float posizionePrecedente=0.0;
+float velocitaPrecedente=0.0;
 void loop() {
   if(digitalRead(pinButton)==LOW){
     calibrazione();
@@ -97,10 +98,10 @@ void loop() {
     float x, y, z;
     misura(x, y, z);
     float posizioneCorrente = posizione(x, y);
-    Serial.print(posizioneCorrente);
-    Serial.print(" ");
-    Serial.print(posizioneCorrente-posizionePrecedente);
-    Serial.println("");
+    float velocitaCorrente = posizioneCorrente-posizionePrecedente;
+    float accelerazioneCorrente = velocitaCorrente-velocitaPrecedente;
+    Serial.print(accelerazioneCorrente);
     posizionePrecedente=posizioneCorrente;
+    velocitaPrecedente=velocitaCorrente;
   }
 }

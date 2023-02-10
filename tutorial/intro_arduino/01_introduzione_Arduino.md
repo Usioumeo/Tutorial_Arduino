@@ -101,7 +101,7 @@ Entrambi i terminali (computer e scheda) devono usare lo stesso baud, e baud pi√
 - 38400
 - 57600
 - 115200
-``
+
 ### Funzione Serial.print e println
 `Serial.print(parametro)` scrive il parametro in seriale. `Serial.println(parametro)` dopo aver scritto un valore va a capo.
 

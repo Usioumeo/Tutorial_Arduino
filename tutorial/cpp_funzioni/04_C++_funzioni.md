@@ -1,6 +1,6 @@
 # Le funzioni
 
-### [Progetto di esempio: cpp_funzioni](./C%2B%2B_funzioni/C%2B%2B_funzioni.ino)
+### [Progetto di esempio: cpp_funzioni](./cpp_funzioni.ino)
 
 Immaginate se un architetto, nel momento in cui gli viene chiesto di costruire una casa, dovesse fare tutto da solo: progettare, comprare i materiali, costruire la struttura, fare l'impianto elettrico, ... Probabilmente impazzirebbe dopo poco, perchè è difficile saper fare bene tutti quei lavori tenendo tutto sotto controllo. Le aziende edili hanno infatti una gerarchia: l'architetto progetta, sulla base del progetto gli operai costruiscono l'edificio, poi arriva l'elettricista, ...
 

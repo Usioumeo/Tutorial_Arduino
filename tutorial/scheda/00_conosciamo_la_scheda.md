@@ -10,7 +10,7 @@ Questa scheda opera a 5v e non possiede nessun sensore integrato. È l'ideale pe
 
 I pin PWM sono indicati con la tilde `~`.
 
-[![Pinout Arduino UNO](./assets/Pinout-UNOrev3_latest.png)](https://content.arduino.cc/assets/Pinout-UNOrev3_latest.png)
+[![Pinout Arduino UNO](./Pinout-UNOrev3_latest.png)](https://content.arduino.cc/assets/Pinout-UNOrev3_latest.png)
 
 ### Su Arduino IDE
 
@@ -30,7 +30,7 @@ Questa scheda opera a 3.3v, quindi attenzione a non far andare voltaggi maggiori
   - D2-D13 sono in teoria tutti gestibili con il PWM, ma è meglio controllare, data l'imprecisione nella documentazione
 - 8 entrate analogiche (A0-A7, 12 bit, 200 kHz)
 
-[![Pinout Arduino Nano 33 BLE Sense](./assets/Pinout-NANOsense_latest.png)](https://content.arduino.cc/assets/Pinout-NANOsense_latest.png)
+[![Pinout Arduino Nano 33 BLE Sense](./Pinout-NANOsense_latest.png)](https://content.arduino.cc/assets/Pinout-NANOsense_latest.png)
 
 ### I sensori presenti sulla scheda
 

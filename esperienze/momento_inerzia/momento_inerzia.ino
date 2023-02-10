@@ -16,7 +16,7 @@ inoltre in questo esempio il sensore si calibra all'avvio del programma, e quand
 
 //configuarzione programma
 #define pinLed 13
-#define pinButton 12
+#define pinButton 3
 #define minField 15 //microTesla
 
 #define calibrationMeasures 50
@@ -64,10 +64,14 @@ float posizione(float x, float y){
     return curPos;
   }
   float curPhase = atan2(y, x);
-  if(abs(curPhase-prevPhase)<abs(curPhase+M_PI*2-prevPhase)){
+  if(abs(curPhase-prevPhase)<M_PI){
     curPos+=curPhase-prevPhase;
   }else{
-    curPos+=curPhase+2*M_PI-prevPhase;
+    if(abs(curPhase+M_PI*2-prevPhase)<abs(curPhase-M_PI*2-prevPhase)){
+      curPos+=curPhase+2*M_PI-prevPhase;
+    }else{
+      curPos+=curPhase-2*M_PI-prevPhase;
+    }
   }
   prevPhase=curPhase;
   return curPos;

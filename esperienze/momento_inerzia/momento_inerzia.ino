@@ -89,19 +89,30 @@ void setup() {
 
 
 
-float posizionePrecedente=0.0;
-float velocitaPrecedente=0.0;
+float ultimePosizioni[16];
+float ultimeTempi[16];
+float ultimeVelocita[16];
 void loop() {
   if(digitalRead(pinButton)==LOW){
     calibrazione();
   }else{
     float x, y, z;
     misura(x, y, z);
+
+    for (int i = 0; i < 15; i = i + 1) {
+      ultimePosizioni[i] = ultimePosizioni[i+1];
+      ultimeTempi[i] = ultimeTempi[i+1];
+      ultimeVelocita[i] = ultimeVelocita[i+1];
+    }
+    
     float posizioneCorrente = posizione(x, y);
-    float velocitaCorrente = posizioneCorrente-posizionePrecedente;
-    float accelerazioneCorrente = velocitaCorrente-velocitaPrecedente;
-    Serial.print(accelerazioneCorrente);
-    posizionePrecedente=posizioneCorrente;
-    velocitaPrecedente=velocitaCorrente;
+    ultimePosizioni[15] = posizioneCorrente;
+    float tempo = millis() / 1000.0;
+    ultimeTempi[15] = tempo;
+    float velocitaCorrente = (posizioneCorrente-ultimePosizioni[14])/(tempo-ultimeTempi[14]);
+    ultimeVelocita[15] = velocitaCorrente;
+    
+    float accelerazioneCorrente = (ultimeVelocita[15]-ultimeVelocita[0])/(ultimeTempi[15]-ultimeTempi[0]);
+    Serial.println(accelerazioneCorrente);
   }
 }

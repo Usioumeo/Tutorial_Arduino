@@ -1,6 +1,6 @@
 # C++ base
 
-### [Progetto di esempio: C++_base](./C%2B%2B_base/C%2B%2B_base.ino)
+### [Progetto di esempio: cpp_base](./C%2B%2B_base/C%2B%2B_base.ino)
 
 ## Commenti
 

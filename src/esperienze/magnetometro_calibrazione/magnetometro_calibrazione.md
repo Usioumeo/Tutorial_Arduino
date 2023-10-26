@@ -18,8 +18,8 @@
 ```
 
 - Fornisce misurazioni ad una frequenza di 20Hz.
-- Riesce a leggere valori di campo magnetico da \\( -400\mu T \\) a \\( +400\mu T \\), con una precisione di \\( \pm 1.4 \cdot 10^{-2}\mu T \\).
-- Fornisce i dati nell'unità di misura \\( \mu T \\), ovvero microTesla.
+- Riesce a leggere valori di campo magnetico da $ -400\mu T $ a $ +400\mu T $, con una precisione di $ \pm 1.4 \cdot 10^{-2}\mu T $.
+- Fornisce i dati nell'unità di misura $ \mu T $, ovvero microTesla.
 
 Il progetto in questa cartella fa una calibrazione iniziale del magnetometro, così da rimuovere il campo magnetico terrestre ed altre interferenze dalle misurazioni. È quindi una buona idea tenere il sensore fermo durante l'esecuzione del programma, così che i dati di calibrazione restino validi. Se non si vuole questo tipo di calibrazione iniziale, si puo' usare il progetto [magnetometro](../magnetometro/13_magnetometro.md) invece.
 

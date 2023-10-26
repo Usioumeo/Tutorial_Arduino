@@ -18,8 +18,8 @@
 ```
 
 - Fornisce misurazioni ad una frequenza di 20Hz.
-- Riesce a leggere valori di campo magnetico da \\( -400\mu T \\) a \\( +400\mu T \\) , con una precisione di \\( \pm 1.4 \cdot 10^{-2}\mu T \\) .
-- Fornisce i dati nell'unità di misura \\( \mu T \\), ovvero microTesla.
+- Riesce a leggere valori di campo magnetico da $ -400\mu T $ a $ +400\mu T $ , con una precisione di $ \pm 1.4 \cdot 10^{-2}\mu T $ .
+- Fornisce i dati nell'unità di misura $ \mu T $, ovvero microTesla.
 
 Nel caso in cui si voglia fare una calibrazione iniziale del magnetometro, così da rimuovere il campo magnetico terrestre ed altre interferenze dalle misurazioni, si può fare riferimento al progetto [magnetometro_calibrazione](../magnetometro_calibrazione/14_magnetometro_calibrazione.md)
 

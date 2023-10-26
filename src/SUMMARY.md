@@ -11,10 +11,10 @@
 
 - [Esperienze](./esperienze/esperienze.md)
 
-    - [ultrasuoni](./esperienze/ultrasuoni/ultrasuoni.md)
-    - [accelerometro](./esperienze/accelerometro/accelerometro.md)
-    - [giroscopio](./esperienze/giroscopio/giroscopio.md)
-    - [magnetometro](./esperienze/magnetometro/magnetometro.md)
-    - [magnetometro_calibrazione](./esperienze/magnetometro_calibrazione/magnetometro_calibrazione.md)
-    - [barometro](./esperienze/barometro/barometro.md)
-    - [colore](./esperienze/colore/colore.md)
+    - [Ultrasuoni](./esperienze/ultrasuoni/ultrasuoni.md)
+    - [Accelerometro](./esperienze/accelerometro/accelerometro.md)
+    - [Giroscopio](./esperienze/giroscopio/giroscopio.md)
+    - [Magnetometro](./esperienze/magnetometro/magnetometro.md)
+    - [Magnetometro_calibrazione](./esperienze/magnetometro_calibrazione/magnetometro_calibrazione.md)
+    - [Barometro](./esperienze/barometro/barometro.md)
+    - [Colore](./esperienze/colore/colore.md)

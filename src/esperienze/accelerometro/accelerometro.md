@@ -13,9 +13,13 @@
 
 ### [Progetto di esempio: accelerometro](./accelerometro.ino)
 
+```C++
+{{#include accelerometro.ino}}
+```
+
 - Fornisce misurazioni ad una frequenza di 104Hz.
-- Riesce a leggere accelerazioni da $-4g$ a $+4g$, con una precisione di $\pm 1.22 \cdot 10^{-4}g$.
-- Fornisce i dati nell'unità di misura $g$, cioè rispetto all'accelerazione di gravità.
+- Riesce a leggere accelerazioni da \\( -4g \\) a \\( +4g \\), con una precisione di \\( \pm 1.22 \cdot 10^{-4}g \\).
+- Fornisce i dati nell'unità di misura \\( g\\), cioè rispetto all'accelerazione di gravità.
 
 Più informazioni sull'accelerometro sono disponibili [nel tutorial ufficiale di Arduino](https://docs.arduino.cc/tutorials/nano-33-ble-sense/imu-accelerometer).
 

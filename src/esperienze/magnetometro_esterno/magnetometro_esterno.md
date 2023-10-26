@@ -4,7 +4,7 @@
     - ![](./KY-024.png)
 - L'output analogico proviene dal chip SS49E:
     - permette la misurazione del campo magnetico lungo un solo asse
-    - riesce a leggere valori di campo magnetico anche grandi, da \\( -150mT \\) a \\( +150mT \\), ma la precisione è piuttosto carente (se la lettura analogica di Arduino fornisce solo valori da 0 a 1024, allora la precisione massima è di \\( 300mT/1024=3Gauss \\))
+    - riesce a leggere valori di campo magnetico anche grandi, da $ -150mT $ a $ +150mT $, ma la precisione è piuttosto carente (se la lettura analogica di Arduino fornisce solo valori da 0 a 1024, allora la precisione massima è di $ 300mT/1024=3Gauss $)
     - i dati letti da Arduino con `analogRead` saranno invertiti rispetto al campo magnetico, ovvero valori più alti letti corrispondono a valori più bassi del campo magnetico
     - il datasheet del SS49E è [qui](./SS49E.PDF)
 - L'output digitale proviene da un comparatore:

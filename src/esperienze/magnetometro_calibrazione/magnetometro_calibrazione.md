@@ -1,7 +1,7 @@
 # LSM9DS1
 
 - Il modulo inerziale LSM9DS1 è integrato nell'Arduino Nano 33 BLE Sense e pertanto si può usare solo con tale scheda.
-- Il datasheet è accessibile [qui](./assets/LSM9DS1.pdf) (scaricato) o [qui](https://cdn.sparkfun.com/assets/learn_tutorials/3/7/3/LSM9DS1_Datasheet.pdf) (fonte originale).
+- Il datasheet è accessibile [qui](./LSM9DS1.pdf) (scaricato) o [qui](https://cdn.sparkfun.com/assets/learn_tutorials/3/7/3/LSM9DS1_Datasheet.pdf) (fonte originale).
 - Per l'uso dei sensori su questa scheda è necessario installare la libreria omonima. Si può fare in due modi:
   - Il modo più comodo per perdere meno tempo con gli studenti in laboratorio è copiare i file [*Arduino_LSM9DS1.h*](./accelerometro/Arduino_LSM9DS1.h), [*LSM9DS1.h*](./accelerometro/LSM9DS1.h) e [*LSM9DS1.cpp*](./accelerometro/LSM9DS1.cpp) nella cartella del progetto, quella in cui è presente anche il file *.ino*. Poi il progetto sarà portabile a tutti i computer **senza ulteriore setup necessario**. I tre file sono già presenti nei tre progetti di esempio per accelerometro, giroscopio e magnetometro.
   - Altrimenti basta andare in `Strumenti -> Gestione librerie`, cercare "LSM9DS1" ed installare "Arduino_LSM9DS1". Bisognerà però ripetere questa azione su ogni computer su cui si vuole usare il progetto.

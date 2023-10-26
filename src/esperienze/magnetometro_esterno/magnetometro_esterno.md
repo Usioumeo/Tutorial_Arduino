@@ -14,6 +14,10 @@
 
 ### [Progetto di esempio: magnetometro_esterno](./magnetometro_esterno.ino)
 
+```C++
+{{#include magnetometro_esterno.ino}}
+```
+
 Queste sono le connessioni da fare se si usa un Arduino UNO. Se si usa un altro arduino (ad esempio il Nano 33 BLE) l'importante è collegare il pin analogico in uscita dal sensore ad un pin analogico di Arduino, altrimenti la lettura non potrà essere analogica.
 
 ![](./024-ARD.png)

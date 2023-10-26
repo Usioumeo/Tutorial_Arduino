@@ -15,6 +15,7 @@
     - [Accelerometro](./esperienze/accelerometro/accelerometro.md)
     - [Giroscopio](./esperienze/giroscopio/giroscopio.md)
     - [Magnetometro](./esperienze/magnetometro/magnetometro.md)
-    - [Magnetometro_calibrazione](./esperienze/magnetometro_calibrazione/magnetometro_calibrazione.md)
+    - [Magnetometro calibrazione](./esperienze/magnetometro_calibrazione/magnetometro_calibrazione.md)
+    - [Magnetometro esterno](./esperienze/magnetometro_esterno/magnetometro_esterno.md)
     - [Barometro](./esperienze/barometro/barometro.md)
     - [Colore](./esperienze/colore/colore.md)

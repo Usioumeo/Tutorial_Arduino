@@ -2,6 +2,10 @@
 
 ### [Progetto di esempio: ultrasuoni](./ultrasuoni.ino)
 
+```C++
+{{#include ultrasuoni.ino}}
+```
+
 - Il sensore ad ultrasuoni in dotazione della scuola è il HC-SR04.
 - Opera a 5v, pertanto si può connettere solo ad un Arduino Uno (il Nano 33 BLE opera a 3.3v, quindi richiederebbe un convertitore 3.3v-5v).
 - Invia segnali acustici a 40kHz, ha un'angolo di misurazione di $15°$ e ha un range di misurazione tra i $2cm$ e i $400cm$.

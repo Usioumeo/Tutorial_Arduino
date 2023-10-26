@@ -12,10 +12,12 @@
 ## Giroscopio
 
 ### [Progetto di esempio: giroscopio](./giroscopio.ino)
-
+```C++
+{{#include giroscopio.ino}}
+```
 - Fornisce misurazioni ad una frequenza di 104Hz.
-- Riesce a leggere velocità angolari da $-2000°/s$ a $+2000°/s$, con una precisione di $\pm 7 \cdot 10^{-2}°/s$.
-- Fornisce i dati nell'unità di misura $dps$, ovvero $°/s$, ovvero gradi al secondo.
+- Riesce a leggere velocità angolari da \\( -2000°/s \\) a \\( +2000°/s \\), con una precisione di \\( \pm 7 \cdot 10^{-2}°/s \\).
+- Fornisce i dati nell'unità di misura \\( dps \\), ovvero \\( °/s \\), ovvero gradi al secondo.
 
 Più informazioni sul giroscopio sono disponibili [nel tutorial ufficiale di Arduino](https://docs.arduino.cc/tutorials/nano-33-ble-sense/imu-gyroscope).
 

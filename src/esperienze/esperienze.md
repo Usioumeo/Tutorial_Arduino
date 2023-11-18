@@ -11,3 +11,4 @@ Le spiegazioni dei vari sensori, assieme a delle esperienze di laboratorio base 
 - [Barometro](./barometro/barometro.md): sensore di pressione (progetto Arduino allegato: [barometro.ino](./barometro/barometro.ino))
 - [Colore](./colore/colore.md): sensore di colore e luce (progetto Arduino allegato: [colore.ino](./colore/colore.ino))
 - [Momento inerzia](./momento_inerzia/): uso del magnetometro per calcolare il momento d'inerzia di un magnete sospeso ad un filo attorcigliato (progetto Arduino allegato: [momento_inerzia.ino](./momento_inerzia/momento_inerzia.ino))
+- [Temperatura e umidità](./temperatura_umidita/temperatura_umidita.md): uso del sensore esterno di temperatura e umidità DHT11 (progetto Arduino allegato: [temperatura_umidita.ino](./temperatura_umidita/temperatura_umidita.ino))
